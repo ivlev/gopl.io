@@ -9,12 +9,12 @@ package main
 import (
 	"fmt"
 	"os"
-	"strings"
-)
+	"strings" // Можно не танцевать с бубном
+)				// если задача - всего лишь склеить вместе аргументы командной строки
 
 //!+
 func main() {
-	fmt.Println(strings.Join(os.Args[1:], " "))
+	fmt.Println(strings.Join(os.Args[1:], " ")) // вопреки наивным ожиданиям string.Join воспринимает только два аргумента
 }
 
 //!-
